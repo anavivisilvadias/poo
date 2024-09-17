@@ -13,4 +13,4 @@ class Pessoa {
 }
 // Objeto/Instância "pessoal" criada apartir da classe Pessoa
 const pessoa = new Pessoa('Ana Vitoria', 17, 1.60, 55.95);
-pessoal.falar(); // Chamada do método falar() da classe Pessoa
+pessoa.falar(); // Chamada do método falar() da classe Pessoa
