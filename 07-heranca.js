@@ -23,3 +23,10 @@ class Funcionario extends Pessoa {
         this.salario = salario;
     }
 }
+
+// Classe Diretor que herda de Funcionario
+class Diretor extends Funcionario {
+    constructor(nome, idade, altura, peso, salario) {
+        super(nome, idade, altura, peso, salario);
+    }
+}
