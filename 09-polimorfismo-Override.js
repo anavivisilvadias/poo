@@ -39,3 +39,15 @@ class Guerreiro extends Personagem {
     }
 }
 
+
+// Classe Arqueiro que herda de Personagem
+class Guerreiro extends Personagem {
+    constructor(nome, vida, tipoFlecha) {
+        super(nome, vida);
+        this.tipoFlecha = tipoFlecha;
+    }
+
+    atacar() {
+        console.log(`${this.nome} dispara flechas ${this.tipoFlecha}!`);
+    }
+}
