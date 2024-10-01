@@ -91,3 +91,21 @@ class Personagem {
         }
     }
 
+    // Classe derivada - Paladino
+    class Paladino extends Personagem {
+        constructor(nome, nível, vida, mana, fé) {
+            super(nome, "Paladino", nível, vida, mana);
+            this.fé = fé;
+        }
+
+        // Sobrescrevendo o método defesa
+        defesa() {
+            console.log(`${this.nome} se defendeu com o escudo sagrado, absorvendo mais dano com base na fé (${this.fé})`);
+        }
+
+        // Método específico
+        curar() {
+            console.log(`${this.nome} usa sua fé para curar a si mesmo ou aliados!`);
+        }
+    }
+
