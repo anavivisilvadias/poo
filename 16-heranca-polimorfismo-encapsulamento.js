@@ -109,3 +109,22 @@ class Personagem {
         }
     }
 
+ // Classe derivada - Mecanico
+    class Mecanico extends Personagem {
+      constructor(nome, nível, vida, mana, engenharia) {
+        super(nome, "Mecanico", nível, vida, mana);
+        this.engenharia = engenharia; // Atributo específico
+      }
+
+      // Sobrescrevendo o método receberDano
+      receberDano(dano) {
+        const danoReduzido = dano - this.engenharia;
+         super.receberDano(danoReduzido);
+          console.log(`${this.nome} usou sua engenharia para reduzir o dano em ${this.engenharia}.`)
+      }
+
+      // Método específico
+      construirTorre() {
+        console.log(`${this.nome} construiu uma torre defensiva!`);
+      }
+    }
