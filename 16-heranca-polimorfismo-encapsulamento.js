@@ -31,10 +31,10 @@ class Personagem {
     this.#classe = classe;
   }
   // Métodos Getter e Setter para o atributo nível
-  get nivel() {
+  get nível() {
     return this.#nível;
   }
-  set nivel(nível) {
+  set nível(nivel) {
     this.#nível = nivel;
   }
   // Métodos Getter e Setter para o atributo vida
@@ -59,15 +59,13 @@ class Personagem {
         } else if (args.length === 1) {
             console.log(`${this.nome} atacou com um poder de ${args[0]}!`);
         } else if (args.length === 2) {
-                console.log(`${this.nome} dispara flechas ${tipoFlecha} com um arco!`);
-            } else {
-                console.log(`${this.nome} usou ${args[1]} e atacou com ${args[0]} de poder!`);
+               console.log(`${this.nome} usou ${args[1]} e atacou com ${args[0]} de poder!`);
         } else {
-            console.log('Número inválido de argumentos.');
+            console.log("Número inválido de argumentos.");
         }
     }
     defesa() {
-        console.log(`${this.nome} se defendeu com ${this.#nivel * 2} pontos de defesa!`);
+        console.log(`${this.nome} se defendeu com ${this.#nível * 2} pontos de defesa!`);
     }
     receberDano(dano) {
         this.vida -= dano;
