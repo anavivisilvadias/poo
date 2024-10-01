@@ -1,34 +1,34 @@
 // Classe Base Personagem
 class Personagem {
-  // Encapsulando os atributos com #, tornando-os privados
-  #nome;
-  #classe;
-  #nível;
-  #vida;
-  #mana;
+     // Encapsulando os atributos com #, tornando-os privados
+      #nome;
+     #classe;
+     #nível;
+     #vida;
+     #mana;
 
   // Método Construtor
-  constructor(nome, classe, nivel, vida, mana) {
-    this.#nome = nome;
-    this.#classe = classe;
-    this.#nível = nivel;
-    this.#vida = vida;
-    this.#mana = mana;
+    constructor(nome, classe, nivel, vida, mana) {
+     this.#nome = nome;
+     this.#classe = classe;
+     this.#nível = nivel;
+     this.#vida = vida;
+     this.#mana = mana;
   }
   // Métodos Setters e Setters
   // Métodos Getter e Setter para o atributo nome
-  get nome() {
-    return this.#nome;
+    get nome() {
+      return this.#nome;
   }
-  set nome(nome) {
-    this.#nome = nome;
+    set nome(nome) {
+     this.#nome = nome;
   }
   // Métodos Getter e Setter para o atributo classe
-  get classe() {
-    return this.#classe;
+    get classe() {
+     return this.#classe;
   }
-  set classe(classe) {
-    this.#classe = classe;
+    set classe(classe) {
+     this.#classe = classe;
   }
   // Métodos Getter e Setter para o atributo nível
   get nível() {
@@ -53,7 +53,7 @@ class Personagem {
   }
  // Métodos
  // Simulando sobrecarga com rest parameter
- atacar(...args) {
+    atacar(...args) {
         if (args.length === 0) {
             console.log(`${this.nome} realiza um ataque normal!`);
         } else if (args.length === 1) {
