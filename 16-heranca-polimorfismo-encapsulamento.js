@@ -128,3 +128,23 @@ class Personagem {
         console.log(`${this.nome} construiu uma torre defensiva!`);
       }
     }
+
+    // Criando instância da classe derivada Assassino
+    const assassino = new Assassino("Luna Sombria", 10, 100, 50, 8);
+    // Chamando os métodos
+    assassino.atacar(); // Método sobrescrito
+    assassino.usarFurtividade(); //Método específico
+
+
+    // Criando instância da classe derivada Paladinho
+    const paladinho = new Paladinho("Sir Lancelot", 12, 120, 70, 15);
+    // Chamando os métodos
+    paladinho.defesa(); // Método sobrescrito
+    paladinho.curar(); //Método específico
+
+
+    // Criando instância da classe derivada Mecanico
+    const mecanico = new Mecanico("Roberto das Engrenagens", 8, 90, 40, 5);
+    // Chamando os métodos
+    mecanico.receberDano(30); // Método sobrescrito
+    mecanico.construirTorre(); //Método específico
