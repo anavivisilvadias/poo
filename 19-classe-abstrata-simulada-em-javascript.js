@@ -56,3 +56,18 @@ class Mago extends Personagem {
     console.log(`${this.nome} usa um escudo mágico para se defender!`);
   }
 }
+
+// Criando instâncias e testando o comportamento
+try {
+    const personagem = new Personagem("Invalido"); // Isso vai lançar um erro
+} catch (error) {
+    console.log(error.message);
+}
+
+const guerreiro = new Guerreiro("Thorin", "Espada");
+guerreiro.atacar(); // "Thorin ataca com a Espada!"
+guerreiro.defender(); // "Thorin levanta o escudo para se defendder!"
+
+const mago = new Mago("Gandalf", "Bola de Fogo");
+mago.atacar(); // "Gandalf lança a magia Bola de Fogo!"
+mago.defender(); // "Gandalf usa um escudo mágico para se defender!"
